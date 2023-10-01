@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main () {
+
+    int ano = 365;
+    int mes = 30;
+    int dias;
+    int idade;
+
+    printf("Digite a idade em dias que deseja converte: \n");
+    scanf("%d", &idade); 
+
+    ano = idade / 365; 
+    idade %= 365; 
+    mes = idade / 30;
+    idade %= 30;  
+
+    dias = idade; 
+
+    printf("Idade: %d ano(s), %d mes(es), %d dia(s) \n", ano, mes, dias); 
+    
+
+
+
+
+
+
+    return 0;
+}
